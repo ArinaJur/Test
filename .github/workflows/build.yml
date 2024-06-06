@@ -48,9 +48,6 @@ jobs:
 
     - name: Test with Maven
       run: mvn test
-      env: 
-        ${{ vars.CHROME_OPTIONS }}
-        ${{ vars.CI_RUN }}
 
     - name: Load test report history
       uses: actions/checkout@v4
