@@ -48,9 +48,6 @@ jobs:
 
     - name: Test with Maven
       run: mvn test
-      env: 
-        CHROME_OPTIONS: --remote-allow-origins=*;--disable-gpu;--no-sandbox;--disable-dev-shm-usage;--headless=new;--window-size=1920,1080
-        CI_RUN: true
 
     - name: Load test report history
       uses: actions/checkout@v4
